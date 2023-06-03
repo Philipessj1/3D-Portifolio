@@ -1,0 +1,11 @@
+Model Information:
+* title:	HUAWEI cell phone
+* source:	https://sketchfab.com/3d-models/huawei-cell-phone-877d7b90e3764c4a88ae21df8d7e14cd
+* author:	shaoweihe17 (https://sketchfab.com/shaoweihe17)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "HUAWEI cell phone" (https://sketchfab.com/3d-models/huawei-cell-phone-877d7b90e3764c4a88ae21df8d7e14cd) by shaoweihe17 (https://sketchfab.com/shaoweihe17) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
