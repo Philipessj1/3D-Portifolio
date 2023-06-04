@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  construction,
 } from "../assets";
 
 export const navLinks = [
@@ -42,21 +43,22 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Desenvolvedor Web",
     icon: web,
   },
   {
-    title: "MERN Developer",
+    title: "Desenvolvedor Backend",
+    icon: creator,
+  },
+  {
+    title: "MERN Stack",
     icon: mobile,
   },
   {
-    title: "MEAN Developer",
+    title: "MEAN Stack",
     icon: backend,
   },
-  {
-    title: "Backend Developer",
-    icon: creator,
-  },
+  
 ];
 
 const technologies = [
@@ -115,6 +117,10 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    icon: construction,
+  }
+  ,
   {
     title: "React.js Developer",
     company_name: "Starbucks",
