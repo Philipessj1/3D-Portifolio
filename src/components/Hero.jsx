@@ -8,7 +8,7 @@ const Hero = () => {
     <section className='relative w-full h-screen mx-auto'>
 
       <div className={`${ styles.paddingX } absolute inset-0 
-      top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+      sm:top-[80px] top-[60px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
 
         <div className="flex flex-col justify-center items-center mt-5">
           <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
@@ -17,10 +17,10 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915eff]'>Philipe</span>
+            Olá, eu sou <span className='text-[#915eff]'>Philipe</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden'/> interfaces and web applications.
+          Desenvolvedor Web com <span className='blue-text-gradient'>MERN</span> e <span className='pink-text-gradient'>MEAN</span> Stack.
           </p>
         </div>
       </div>  
@@ -30,7 +30,7 @@ const Hero = () => {
       <div className='absolute bottom-7 w-full flex justify-center items-center'>
         <a href="#about">
           <div className="w-[32px] h-[56px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.dev 
+            <motion.div 
               animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,
