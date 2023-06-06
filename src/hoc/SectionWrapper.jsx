@@ -19,7 +19,7 @@ const SectionWrapper = (Component, idName) =>
         </span>
         <Component />
       </motion.section>
-    )
-  }
+    );
+  };
  
 export default SectionWrapper;
