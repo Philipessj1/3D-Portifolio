@@ -13,7 +13,7 @@ const ExperienceCard = () => (
   <VerticalTimelineElement
     contentStyle={{ background: '#1d1836', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid #232631' }}
-    date='2023 - Agora'
+    date='Em Breve'
     iconStyle={{ background: experiences[2].iconBg }}
     icon={
       <div className="flex justify-center items-center w-full h-full">
@@ -38,22 +38,21 @@ const ExperienceCard = () => (
 
 const Experience = () => {
   return (
-    
     <>
-    <motion.div variants={ textVariant() }>
-    <p className={ styles.sectionSubText }>
-          O que fiz até agora
-        </p>
-        <h2 className={ styles.sectionHeadText }>
-          Experiência
-        </h2>
-    </motion.div>
+      <motion.div variants={ textVariant() }>
+      <p className={ styles.sectionSubText }>
+            O que fiz até agora
+          </p>
+          <h2 className={ styles.sectionHeadText }>
+            Experiência
+          </h2>
+      </motion.div>
 
-    <div className="mt-20 flex flex-col">
-      <VerticalTimeline>
-        <ExperienceCard />
-      </VerticalTimeline>
-    </div>
+      <div className="mt-20 flex flex-col">
+        <VerticalTimeline>
+          <ExperienceCard />
+        </VerticalTimeline>
+      </div>
     </>
   )
 }

@@ -6,7 +6,6 @@ import { ComputersCanvas } from './canvas';
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
-
       <div className={`${ styles.paddingX } absolute inset-0 
       sm:top-[80px] top-[60px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
 
@@ -20,7 +19,7 @@ const Hero = () => {
             Olá, eu sou <span className='text-[#915eff]'>Philipe</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          Desenvolvedor Web com <span className='blue-text-gradient'>MERN</span> e <span className='pink-text-gradient'>MEAN</span> Stack.
+          Desenvolvedor Web com <span className='blue-text-gradient'>MERN</span> Stack.
           </p>
         </div>
       </div>  
@@ -42,7 +41,6 @@ const Hero = () => {
           </div>
         </a>
       </div>
-
     </section>
   )
 }
