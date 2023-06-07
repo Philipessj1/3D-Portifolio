@@ -6,11 +6,13 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import IsMobile from './IsMobile';
 
 const Contact = () => {
   const formRef = useRef();
   const [revealForm, setRevealForm] = useState(true);
   const [loading, setLoading] = useState(false);
+  const isMobile = IsMobile();
 
   const [form, setForm] = useState({
     name: '',
@@ -62,7 +64,7 @@ const Contact = () => {
         <p className={ styles.sectionSubText }>Fale comigo</p>
         <h3 className={ styles.sectionHeadText }>Contato</h3>
 
-        {/* <button onClick={() => setRevealForm(!revealForm)}>Change</button> */}
+        <button onClick={() => setRevealForm(!revealForm)}>Change</button>
 
         { revealForm && 
           <form
@@ -113,13 +115,15 @@ const Contact = () => {
         </form>
         }
       </motion.div>
-
+        
+      { !isMobile && 
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
       </motion.div>
+      }
     </div>
   )
 }

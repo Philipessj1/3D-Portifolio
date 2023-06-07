@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense } from 'react';
 
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
+import IsMobile from '../IsMobile';
 
 const Computers = ({ isMobile }) => {
 
@@ -36,27 +37,8 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 640px)');
-    
-    setIsMobile(mediaQuery.matches);
-
-    // controla a mudança do mediaQuery.
-    const handleMediaQueryChange = (e) => {
-      setIsMobile(e.matches);
-    }
-    
-    // adiciona um e.listener para mudanças no tamanho da tela.
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-    
-    // remove o listener quando o componente é desmontado.
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    }
-  }, [])
-
+  const isMobile = IsMobile();
+  
   return (
     <Canvas
       frameloop='demand'

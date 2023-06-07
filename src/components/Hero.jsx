@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
-const Hero = () => {
+const Hero = (isMobile) => {
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${ styles.paddingX } absolute inset-0 
@@ -24,9 +24,9 @@ const Hero = () => {
         </div>
       </div>  
 
-      <ComputersCanvas />
+      <ComputersCanvas isMobile={ isMobile } />
 
-      <div className='absolute bottom-7 w-full flex justify-center items-center'>
+      <div className='absolute bottom-14 w-full flex justify-center items-center'>
         <a href="#about">
           <div className="w-[32px] h-[56px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div 
