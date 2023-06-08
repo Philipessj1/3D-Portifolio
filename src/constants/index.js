@@ -1,6 +1,5 @@
 import {
   mobile,
-  backend,
   creator,
   web,
   javascript,
@@ -16,7 +15,6 @@ import {
   threejs,
   construction,
   portifolio,
-  play
 } from "../assets";
 
 export const navLinks = [

@@ -22,6 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import construction from './company/construction.png';
+import linkedin from './linkedin.png';
 
 import portifolio from './3d-portifolio.png';
 
@@ -48,5 +49,6 @@ export {
   threejs,
   construction,
   portifolio,
-  play
+  play,
+  linkedin
 };

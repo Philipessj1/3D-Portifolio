@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
+import { linkedin } from '../assets';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
@@ -10,7 +11,6 @@ import IsMobile from './IsMobile';
 
 const Contact = () => {
   const formRef = useRef();
-  const [revealForm, setRevealForm] = useState(true);
   const [loading, setLoading] = useState(false);
   const isMobile = IsMobile();
 
@@ -64,10 +64,15 @@ const Contact = () => {
         <p className={ styles.sectionSubText }>Fale comigo</p>
         <h3 className={ styles.sectionHeadText }>Contato</h3>
 
-        <button onClick={() => setRevealForm(!revealForm)}>Change</button>
+        <div className="absolute inset-0 flex justify-end m-12 card-img_hover">
+          <div 
+              onClick={() => window.open('https://www.linkedin.com/in/philipe-da-motta-mello', '_blank')}
+              className="white-gradient-1 w-10 h-10 rounded-xl flex justify-center items-center cursor-pointer">
+                <img src={ linkedin } alt="play" className='w-1/2 h-1/2 object-contain' />
+            </div>
+          </div>
 
-        { revealForm && 
-          <form
+        <form
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
@@ -113,7 +118,7 @@ const Contact = () => {
           { loading ? 'Enviando...': 'Enviar' }
          </button>
         </form>
-        }
+
       </motion.div>
         
       { !isMobile && 
