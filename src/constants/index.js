@@ -15,6 +15,7 @@ import {
   threejs,
   construction,
   portifolio,
+  summerize
 } from "../assets";
 
 export const navLinks = [
@@ -138,6 +139,10 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
+        name: "Vite",
+        color: "orange-text-gradient",
+      },
+      {
         name: "Threejs",
         color: "white-text-gradient",
       },
@@ -149,6 +154,32 @@ const projects = [
     image: portifolio,
     source_code_link: "https://github.com/Philipessj1/3D-Portifolio",
     live_link: 'https://philipe-mello.vercel.app'
+  },
+  {
+    name: "Resumidor de Artigos",
+    description:
+      "Resumidor de Artigos com OpenAi GPT-4. Simplifique sua leitura com o Summerize, um resumidor de artigos de código aberto que transforma artigos longos em resumos claros e concisos.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: summerize,
+    source_code_link: "https://github.com/Philipessj1/Summerizer-Ai",
+    live_link: 'https://summerizer-ai.vercel.app/'
   },
   
 ];

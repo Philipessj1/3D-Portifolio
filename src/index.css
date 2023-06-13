@@ -43,6 +43,19 @@
   );
 }
 
+.violet-text-gradient {
+  background: #a98ee2;
+  background: linear-gradient(-90deg, #a98ee2 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #a98ee2 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);

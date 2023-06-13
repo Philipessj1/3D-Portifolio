@@ -25,6 +25,7 @@ import construction from './company/construction.png';
 import linkedin from './linkedin.png';
 
 import portifolio from './3d-portifolio.png';
+import summerize from './summerize-ai.png';
 
 export {
   logo,
@@ -49,6 +50,7 @@ export {
   threejs,
   construction,
   portifolio,
+  summerize,
   play,
   linkedin
 };
