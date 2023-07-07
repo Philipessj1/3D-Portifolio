@@ -12,12 +12,15 @@ Os usuários devem ser capazes de:
 
 ### Screenshots
 
-![](screenshots/desktop.png) - Desktop
+#### Desktop
 
-![](screenshots/mobile.png) - Mobile
+![](screenshots/desktop.png)
 
-![](screenshots/contact.png) - Área de Contato
+![](screenshots/contact.png)
 
+#### Mobile
+
+<img src="screenshots/mobile.png" height="667">
 
 ## Tecnologias
 

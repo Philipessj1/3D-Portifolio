@@ -15,7 +15,8 @@ import {
   threejs,
   construction,
   portifolio,
-  summerize
+  summerize,
+  aiGenerator
 } from "../assets";
 
 export const navLinks = [
@@ -176,10 +177,42 @@ const projects = [
         name: "Tailwind",
         color: "pink-text-gradient",
       },
+      
     ],
     image: summerize,
     source_code_link: "https://github.com/Philipessj1/Summerizer-Ai",
     live_link: 'https://summerizer-ai.vercel.app/'
+  },
+  {
+    name: "Gerador de imagens IA",
+    description:
+      "Gerador de imagens com OpenAi DALL-E. Transforme palavras em arte e dê vida a sua imaginação com o DALL-E.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-pink-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      
+    ],
+    image: aiGenerator,
+    source_code_link: "https://github.com/Philipessj1/Ai-image-project",
+    live_link: 'https://dalle-ai-generator.vercel.app/'
   },
   
 ];

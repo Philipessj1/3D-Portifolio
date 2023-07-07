@@ -26,6 +26,7 @@ import linkedin from './linkedin.png';
 
 import portifolio from './3d-portifolio.png';
 import summerize from './summerize-ai.png';
+import aiGenerator from './ai-img-generator.png';
 
 export {
   logo,
@@ -51,6 +52,7 @@ export {
   construction,
   portifolio,
   summerize,
+  aiGenerator,
   play,
   linkedin
 };
