@@ -2,10 +2,7 @@ import {
   mobile,
   creator,
   web,
-  javascript,
   typescript,
-  html,
-  css,
   reactjs,
   tailwind,
   nodejs,
@@ -17,7 +14,8 @@ import {
   portifolio,
   summerize,
   aiGenerator,
-  freelancer
+  freelancer,
+  next
 } from "../assets";
 
 export const navLinks = [
@@ -52,28 +50,12 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Next.Js",
+    icon: next,
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -83,6 +65,16 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  
   {
     name: "Three JS",
     icon: threejs,
