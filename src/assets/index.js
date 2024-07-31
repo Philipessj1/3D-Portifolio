@@ -21,7 +21,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import construction from './company/construction.png';
+import freelancer from './company/freelancer.png';
+import chinatown from './company/chinatown.png';
 import linkedin from './linkedin.png';
 
 import portifolio from './3d-portifolio.png';
@@ -49,10 +50,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  construction,
   portifolio,
   summerize,
   aiGenerator,
   play,
-  linkedin
+  linkedin,
+  freelancer,
+  chinatown
 };

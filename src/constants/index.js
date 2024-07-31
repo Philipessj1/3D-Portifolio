@@ -13,10 +13,11 @@ import {
   git,
   figma,
   threejs,
-  construction,
+  chinatown,
   portifolio,
   summerize,
-  aiGenerator
+  aiGenerator,
+  freelancer
 } from "../assets";
 
 export const navLinks = [
@@ -98,35 +99,30 @@ const technologies = [
 
 const experiences = [
   {
-    icon: construction,
+    title: "Desenvolvedor Freelancer",
+    company_name: "Freelancer",
+    icon: freelancer,
+    iconBg: "#E6DEDD",
+    date: 'Jan 2023 - Maio 2024',
+    points: [
+      "Desenvolvimento de Projetos Práticos utilizando tecnologias com base em Javascript, como React, Next e Node aplicando código legível e uniforme para fácil compreensão e reutilização.",
+      "Criação de novos softwares, seguindo regras e procedimentos de desenvolvimento dos códigos para atender às especificações dos projetos.",
+      "Definição do layout dos aplicativos e sites desenvolvidos, criando uma experiência agradável e intuitiva para os usuários.",
+    ],
   }
   ,
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: portifolio,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Auxiliar de TI",
+    company_name: "Chinatown Atacado e Varejo",
+    icon: chinatown,
+    iconBg: "#FF0000",
+    date: "maio de 2024 - o momento",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Monitoramento de sistemas operacionais, servidores e execução de comandos para solucionar problemas de Domínio e Rede.",
+      "Planejamento e execução de atividades conforme os prazos estabelecidos, contribuindo para o bom andamento das operações.",
+      "Colaboração com a equipe de desenvolvimento para solucionar erros e falhas de software recém-lançados relatados pelos usuários, auxiliando na implementação de correções.",
     ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: portifolio,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  }
 ];
 
 const projects = [
