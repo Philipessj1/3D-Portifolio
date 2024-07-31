@@ -2,10 +2,14 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import IsMobile from '../utils/isMobile';
 
-const Hero = (isMobile) => {
+const Hero = () => {
+
+  const isMobile = IsMobile();
+
   return (
-    <section className='relative w-full h-screen mx-auto'>
+    <section className={`relative w-full mx-auto ${!isMobile ? 'h-screen' : 'h-[500px]'}`}>
       <div className={`${ styles.paddingX } absolute inset-0 
       sm:top-[80px] top-[60px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
 
@@ -22,9 +26,9 @@ const Hero = (isMobile) => {
           Desenvolvedor Web com <span className='blue-text-gradient'>MERN</span> Stack.
           </p>
         </div>
-      </div>  
+      </div>
 
-      <ComputersCanvas isMobile={ isMobile } />
+      {!isMobile && <ComputersCanvas />}
 
       <div className='absolute bottom-14 w-full flex justify-center items-center'>
         <a href="#about">

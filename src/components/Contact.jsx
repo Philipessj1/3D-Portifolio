@@ -7,7 +7,7 @@ import { linkedin } from '../assets';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
-import IsMobile from './IsMobile';
+import IsMobile from '../utils/isMobile';
 
 const Contact = () => {
   const formRef = useRef();

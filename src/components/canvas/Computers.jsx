@@ -6,38 +6,34 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
-import IsMobile from '../IsMobile';
 
-const Computers = ({ isMobile }) => {
+const Computers = () => {
 
   const computer = useGLTF('./desktop_pc/scene.gltf');
-  const cellphone = useGLTF('./cell_phone/scene.gltf');
 
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <pointLight intensity={1} />
       <spotLight 
-        position={ isMobile ? [-10, 15, -16] : [-20, 50, 10]}
-        angle={ isMobile ? 0.1 : 0.12}
-        penumbra={1}
-        intensity={0.2}
+        position={ [-20, 50, 10] }
+        angle={ 0.12 }
+        penumbra={ 1 }
+        intensity={ 0.2 }
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize={ 1024 }
       />
       <primitive 
-        object={ isMobile ? cellphone.scene : computer.scene }
-        scale={ isMobile ? 0.35 : 0.75 }
-        position={ isMobile ? [0, -1.5, 0] : [0, -3.25, -1.5]}
-        rotation={ isMobile ? [1.57, 0, -1.3] : [-0.01, -0.2, -0.1]}
+        object={ computer.scene }
+        scale={ 0.75 }
+        position={ [0, -3.25, -1.5] }
+        rotation={ [-0.01, -0.2, -0.1] }
       />
     </mesh>
   )
 }
 
 const ComputersCanvas = () => {
-
-  const isMobile = IsMobile();
   
   return (
     <Canvas
@@ -52,7 +48,7 @@ const ComputersCanvas = () => {
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={ isMobile } />
+        <Computers />
       </Suspense>
 
       <Preload all />
