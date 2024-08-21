@@ -8,7 +8,6 @@ Os usuários devem ser capazes de:
 
 - Ver todas as seções da página.
 - Interagir com os objetos em 3d.
-- Enviar emails.
 
 ### Screenshots
 
@@ -16,7 +15,7 @@ Os usuários devem ser capazes de:
 
 ![](screenshots/desktop.png)
 
-![](screenshots/contact.png)
+![](screenshots/experience.png)
 
 #### Mobile
 
