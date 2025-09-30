@@ -24,6 +24,7 @@ import chinatown from './company/chinatown.png';
 import linkedin from './linkedin.png';
 
 import portifolio from './3d-portifolio.png';
+import resumeAnalyzer from './resume-analyzer.png';
 import summerize from './summerize-ai.png';
 import aiGenerator from './ai-img-generator.png';
 
@@ -46,6 +47,7 @@ export {
   typescript,
   threejs,
   portifolio,
+  resumeAnalyzer,
   summerize,
   aiGenerator,
   play,

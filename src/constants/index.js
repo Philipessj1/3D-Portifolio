@@ -15,7 +15,8 @@ import {
   summerize,
   aiGenerator,
   freelancer,
-  next
+  next,
+  resumeAnalyzer,
 } from "../assets";
 
 export const navLinks = [
@@ -45,7 +46,7 @@ const services = [
   {
     title: "MERN Stack",
     icon: mobile,
-  }
+  },
 ];
 
 const technologies = [
@@ -69,12 +70,12 @@ const technologies = [
     name: "TypeScript",
     icon: typescript,
   },
-  
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  
+
   {
     name: "Three JS",
     icon: threejs,
@@ -95,14 +96,13 @@ const experiences = [
     company_name: "Freelancer",
     icon: freelancer,
     iconBg: "#E6DEDD",
-    date: 'Jan 2023 - Maio 2024',
+    date: "Jan 2023 - Maio 2024",
     points: [
       "Desenvolvimento de Projetos Práticos utilizando tecnologias com base em Javascript, como React, Next e Node aplicando código legível e uniforme para fácil compreensão e reutilização.",
       "Criação de novos softwares, seguindo regras e procedimentos de desenvolvimento dos códigos para atender às especificações dos projetos.",
       "Definição do layout dos aplicativos e sites desenvolvidos, criando uma experiência agradável e intuitiva para os usuários.",
     ],
-  }
-  ,
+  },
   {
     title: "Auxiliar de TI",
     company_name: "Chinatown Atacado e Varejo",
@@ -120,8 +120,7 @@ const experiences = [
 const projects = [
   {
     name: "Portifolio 3D",
-    description:
-      "Portifolio 3D responsivo feito com React e Threejs.",
+    description: "Portifolio 3D responsivo feito com React e Threejs.",
     tags: [
       {
         name: "React",
@@ -142,7 +141,33 @@ const projects = [
     ],
     image: portifolio,
     source_code_link: "https://github.com/Philipessj1/3D-Portifolio",
-    live_link: 'https://philipe-mello.vercel.app'
+    live_link: "https://philipe-mello.vercel.app",
+  },
+  {
+    name: "Analisador de Currículos com IA.",
+    description:
+      "Otimize sua candidatura com o Resume Analyzer, uma ferramenta que avalia seu currículo em sistemas de rastreamento de candidatos (ATS) e oferece feedback inteligente para melhorar sua pontuação.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "I18next",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: resumeAnalyzer,
+    source_code_link: "https://github.com/Philipessj1/resume-analyzer",
+    live_link: "https://resume-analyzer-jet-beta.vercel.app/",
   },
   {
     name: "Resumidor de Artigos",
@@ -165,11 +190,10 @@ const projects = [
         name: "Tailwind",
         color: "pink-text-gradient",
       },
-      
     ],
     image: summerize,
     source_code_link: "https://github.com/Philipessj1/Summerizer-Ai",
-    live_link: 'https://summerizer-ai.vercel.app/'
+    live_link: "https://summerizer-ai.vercel.app/",
   },
   {
     name: "Gerador de imagens IA",
@@ -196,13 +220,11 @@ const projects = [
         name: "Tailwind",
         color: "pink-text-gradient",
       },
-      
     ],
     image: aiGenerator,
     source_code_link: "https://github.com/Philipessj1/Ai-image-project",
-    live_link: 'https://dalle-ai-generator.vercel.app/'
+    live_link: "https://dalle-ai-generator.vercel.app/",
   },
-  
 ];
 
 export { services, technologies, experiences, projects };
